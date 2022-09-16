@@ -1,0 +1,13 @@
+#elemento-1 {
+    color: red;
+}
+
+html {
+    background-color: #8895B3;
+    font-family: Arial, Helvetica, sans-serif ;
+    
+}
+
+*.Urgente {
+    font-size: 2rem;
+}
