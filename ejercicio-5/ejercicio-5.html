@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ejercicio 5</title>
+    <title>ejercicio-5</title>
     <link rel="stylesheet" href="ejercicio-5.css">
 </head>
 <body>
-    <div class="principal">
-        <button id="01"  class="boton"><p class="press" >pasa por encima</p></button>
-    </div>
+    <form action="" method="" class="contenedor">
+        <div class="bienvenida">
+            <h1 id="welcome">Welcome Back</h1> 
+            <h4 id="bienvenida2">Welcome back! Please enter your details</h4>
+        </div>    
+        <div class="inputs">
+            <label class="email" for="mail">
+                <span>Email</span>
+                <hr>
+                <input type="email" id="mail" name="mail">
+            </label>
+            <label class="password" for="Password">
+                <span>Password</span>
+                <hr>
+                <input type="password" id="Password" name="Password">
+            </label>
+        </div>
+        <div class="recordatorio">
+            <label for="recordarotio"><input type="checkbox">Remember for 30 days</label>
+        </div>
+        <div class="botones">
+            <button id="login" type="submit">Sign in</button>
+            <button id="google-btn" >
+                <img class="imagen" src="../Jose-Daniel-pag/imagenes/google.png" alt="" >Sign in whit Google
+            </button>
+        </div>
+    </form>
 </body>
 </html>
