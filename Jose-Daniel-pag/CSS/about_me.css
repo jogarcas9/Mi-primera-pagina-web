@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    background-size: cover;
+
+}
+
+.contenedor { 
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    padding: 50px;
+    align-items: center;
+
+}
+
+.foto {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.imagen img {
+    width: 100px;
+    height: 150px;
+    z-index: 1;
+}
+
+.foto .texto {
+    width: 117px;
+    height: 75px;
+    background-color: aliceblue;
+    z-index: 2;
+    position: absolute;
+    bottom: 25px;
+    
+}
+
+
+
+.mihistoria {
+    background-color: aquamarine;
+    height: 150px;
+    width: 400px;
+}

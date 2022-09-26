@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+
+.nombre {
+    display: inline-block;
+    width: max-content;
+    padding: 0 10px;
+}
+
+.nombre > *{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffff;
+}
+
+.nombre > :last-child {
+    transform: rotateX(180deg) translateY(15px);
+    mask-image: linear-gradient(transparent 50%, whitesmoke 90%);
+    -webkit-mask-image: linear-gradient(transparent 50%,  whitesmoke 90%) ;
+    opacity: 0.72;
+}

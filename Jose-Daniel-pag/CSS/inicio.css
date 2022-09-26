@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;1,400&family=Source+Code+Pro:ital,wght@1,200;1,300;1,400;1,500&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: monospace;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background: url(../imagenes/Tierra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+}
+
+.pagina {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.cuerpo span,h1 {
+    color: whitesmoke;
+}
+
+.cuerpo .saludo {
+    font-size: 20pt;
+    margin-top: -50px;
+}
+
+.nombre {
+    display: inline-block;
+    width: max-content;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-shadow: 1.5px 1.5px 3px #59C3C3;
+}
+
+.nombre > *{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffff;
+}
+
+.nombre > :last-child {
+    transform: rotateX(180deg) translateY(15px);
+    mask-image: linear-gradient(transparent 50%, whitesmoke 90%);
+    -webkit-mask-image: linear-gradient(transparent 50%,  whitesmoke 90%) ;
+    opacity: 0.72;
+}
+.cuerpo  .profesion {
+    font-size: 15pt;
+    margin-top: 50px;
+
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.botones button{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+    align-items: center;
+    background: none;
+    border-color: aliceblue;
+    transition: all ease 0.8s;
+    cursor: pointer;
+    border: none;
+    border-bottom: white solid 1px;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.botones button::after{
+    content: " ";
+    background-color: #59C3C3;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transition: ease all 1s;
+    top: -30px;
+    left: 0px;
+}
+
+.botones button:hover::after {
+    top: 0px;
+}
+
+.botones span{
+    color: whitesmoke;
+    font-weight: 900;
+    transition: 0.8s;
+    position: relative;
+    z-index: 2;;
+}
+
+.botones span:hover{
+    font-size: 16px;
+    transition: 0.8s;
+
+}
+
+
+.redes {
+    width: 99.5%;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3px;
+    gap: 5px;
+}
+
+.redes button{
+    width: 30px;
+    height: 30px;
+    background: none
+}
+ .redes .linkedln{
+    width: 50px;
+ }
+
+.redes .boton img{
+    width: 25px;
+    height: 25px;
+}
